@@ -7,10 +7,12 @@
   <meta name="description" content="Торты и авторские десерты на заказ в Москве." />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body id="top">
+  <a class="skip-link" href="#content">К содержанию</a>
   <header class="site-header">
-    <a class="brand" href="#top">Oksana Antonova <span>Art of Desserts</span></a>
-    <nav>
+    <a class="brand" href="#top" aria-label="Oksana Antonova — на главную"><b>AO</b><span><strong>Oksana Antonova</strong>Art of Desserts</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Открыть меню"><span></span><span></span></button>
+    <nav id="main-nav" aria-label="Основная навигация">
       <a href="#products">Продукция</a>
       <a href="#flavors">Начинки</a>
       <a href="#works">Наши работы</a>
@@ -20,36 +22,36 @@
     <a class="btn btn-outline" href="https://t.me/antonovaov" target="_blank" rel="noopener">Заказать в Telegram</a>
   </header>
 
-  <main id="top">
+  <main id="content">
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">Домашняя кондитерская · Москва</p>
         <h1>Торты и авторские десерты на заказ</h1>
         <p class="lead">Индивидуальные вкусы, оформление и внимание к каждой детали. От идеи и референса — до десерта, который станет частью вашего праздника.</p>
         <div class="actions">
-          <a class="btn" href="https://t.me/antonovaov" target="_blank" rel="noopener">Заказать в Telegram</a>
+          <a class="btn" href="https://t.me/antonovaov" target="_blank" rel="noopener"><span class="telegram-icon">➤</span> Заказать в Telegram</a>
           <a class="btn btn-ghost" href="#works">Посмотреть работы</a>
         </div>
-        <div class="facts">
-          <span>Торты от 3000 ₽/кг</span>
-          <span>10 вариантов начинок</span>
-          <span>Оптимальный заказ — за 2 недели</span>
+        <div class="facts" aria-label="Краткая информация">
+          <span><b>♧</b>Торты<br>от 3000 ₽/кг</span>
+          <span><b>◇</b>10 вариантов<br>начинок</span>
+          <span><b>▣</b>Оптимальный заказ<br>за 2 недели</span>
         </div>
       </div>
-      <img src="assets/hero-cake.jpg" alt="Торт Oksana Antonova Art of Desserts" />
+      <div class="hero-photo"><img src="assets/hero-cake.jpg" alt="Авторский торт домашней кондитерской Oksana Antonova" /><span>Больше, чем десерт —<br>это эмоции ♡</span></div>
     </section>
 
     <section id="products" class="section">
       <p class="eyebrow">Что можно заказать</p>
       <h2>Десерты для праздника, подарка или просто особенного дня</h2>
       <div class="cards">
-        <article><img src="assets/hero-cake.jpg" alt=""><h3>Торты</h3><p>от 3000 ₽/кг</p></article>
-        <article><img src="assets/gift-set.jpg" alt=""><h3>Шоколад</h3></article>
-        <article><img src="assets/personalized-sweets.jpg" alt=""><h3>Конфеты</h3></article>
-        <article><img src="assets/eclairs.jpg" alt=""><h3>Пирожные</h3></article>
-        <article><img src="assets/dessert-mix.jpg" alt=""><h3>Орешки</h3></article>
-        <article><img src="assets/pink-rings.jpg" alt=""><h3>Фрукты в шоколаде</h3></article>
-        <article><img src="assets/zephyr.jpg" alt=""><h3>Зефир</h3></article>
+        <article><img src="assets/hero-cake.jpg" alt="Праздничный торт" loading="lazy"><h3>Торты</h3><p>от 3000 ₽/кг</p></article>
+        <article><img src="assets/gift-set.jpg" alt="Подарочный шоколад" loading="lazy"><h3>Шоколад</h3></article>
+        <article><img src="assets/personalized-sweets.jpg" alt="Конфеты ручной работы" loading="lazy"><h3>Конфеты</h3></article>
+        <article><img src="assets/eclairs.jpg" alt="Набор пирожных" loading="lazy"><h3>Пирожные</h3></article>
+        <article><img src="assets/dessert-mix.jpg" alt="Орешки с начинкой" loading="lazy"><h3>Орешки</h3></article>
+        <article><img src="assets/pink-rings.jpg" alt="Фрукты в шоколаде" loading="lazy"><h3>Фрукты в шоколаде</h3></article>
+        <article><img src="assets/zephyr.jpg" alt="Домашний зефир" loading="lazy"><h3>Зефир</h3></article>
       </div>
     </section>
 
@@ -58,15 +60,20 @@
         <p class="eyebrow">Индивидуальные торты</p>
         <h2>Ваш торт может быть именно таким, каким вы его представляете</h2>
         <p>Покажите фотографию, рисунок или референс. Выберите любимый вкус — оформление и детали заказа обсудим индивидуально.</p>
+        <ul class="benefits">
+          <li><b>◇</b><span>Индивидуальный дизайн<small>По вашим идеям и референсам</small></span></li>
+          <li><b>♡</b><span>Начинка на ваш вкус<small>10 вариантов вкусов</small></span></li>
+          <li><b>♙</b><span>Размер под гостей<small>Ориентир — 150–200 г на человека</small></span></li>
+        </ul>
         <a class="btn" href="https://t.me/antonovaov" target="_blank" rel="noopener">Обсудить идею в Telegram</a>
       </div>
-      <img src="assets/themed-cake.jpg" alt="Индивидуальный тематический торт" />
+      <img src="assets/themed-cake.jpg" alt="Индивидуальный тематический торт" loading="lazy" />
     </section>
 
     <section id="flavors" class="section">
       <p class="eyebrow">10 вкусов на выбор</p>
       <h2>Какой будет ваш торт?</h2>
-      <div class="flavors">
+      <div class="flavors" aria-label="Варианты начинок">
         <span>Медовик классический</span>
         <span>Медовик авторский</span>
         <span>Наполеон</span>
@@ -94,12 +101,12 @@
       <p class="eyebrow">Наши работы</p>
       <h2>Сделано для настоящих праздников</h2>
       <div class="gallery">
-        <img src="assets/themed-cake.jpg" alt="">
-        <img src="assets/hero-cake.jpg" alt="">
-        <img src="assets/gift-set.jpg" alt="">
-        <img src="assets/macaroons.jpg" alt="">
-        <img src="assets/personalized-sweets.jpg" alt="">
-        <img src="assets/printed-dessert-1.jpg" alt="">
+        <img src="assets/themed-cake.jpg" alt="Цветочный торт на день рождения" loading="lazy">
+        <img src="assets/hero-cake.jpg" alt="Медовый торт с фирменной лентой" loading="lazy">
+        <img src="assets/gift-set.jpg" alt="Подарочный набор конфет" loading="lazy">
+        <img src="assets/macaroons.jpg" alt="Набор макарон" loading="lazy">
+        <img src="assets/personalized-sweets.jpg" alt="Персонализированные сладости" loading="lazy">
+        <img src="assets/printed-dessert-1.jpg" alt="Десерты с печатью" loading="lazy">
       </div>
     </section>
 
@@ -141,6 +148,7 @@
       <details><summary>За сколько нужно делать заказ?</summary><p>Лучше оформить заказ за 2 недели. Минимальный рекомендуемый срок — одна неделя.</p></details>
       <details><summary>Можно заказать срочно?</summary><p>Да, если есть свободное время. Заказ за 2–3 дня рассчитывается с доплатой 20%.</p></details>
       <details><summary>Сколько торта нужно на человека?</summary><p>Ориентировочно 150–200 г.</p></details>
+      <details><summary>Можно сделать оформление по моей фотографии?</summary><p>Да. Пришлите фотографию, рисунок или референс — обсудим желаемое оформление и адаптируем идею под ваш заказ.</p></details>
       <details><summary>Сколько стоит торт?</summary><p>3000 ₽ за килограмм. Декор рассчитывается отдельно.</p></details>
       <details><summary>Есть доставка?</summary><p>Да. Возможны курьерская доставка и самовывоз. Стоимость доставки рассчитывается отдельно.</p></details>
     </section>
@@ -149,7 +157,7 @@
   <footer>
     <div>
       <strong>Oksana Antonova</strong>
-      <span>Art of Desserts · Москва</span>
+      <span>Art of Desserts · Москва · <span id="year"></span></span>
     </div>
     <div>
       <a href="https://t.me/antonovaov" target="_blank" rel="noopener">Telegram</a>
