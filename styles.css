@@ -78,10 +78,12 @@ h2 { max-width: 920px; margin: 0 0 20px; font-size: clamp(42px, 4.4vw, 66px); li
 .benefits small { display: block; margin-top: 4px; color: #cdb9b6; font-size: 10px; }
 .feature .btn { align-self: flex-start; border-color: rgba(255,255,255,.7); background: transparent; }
 
-.flavors { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; counter-reset: flavors; }
-.flavors span { position: relative; min-height: 84px; padding: 27px 18px 15px; counter-increment: flavors; border: 1px solid var(--line); border-radius: 10px; background: white; font-size: 13px; }
-.flavors span::before { position: absolute; top: 8px; left: 18px; content: '0' counter(flavors); color: #aa8b78; font-family: var(--serif); font-size: 11px; }
-.flavors small { display: block; margin-top: 7px; color: var(--muted); font-size: 10px; line-height: 1.45; }
+.flavors { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 34px; counter-reset: flavors; }
+.flavors article { position: relative; display: flex; min-width: 0; flex-direction: column; overflow: hidden; counter-increment: flavors; border: 1px solid var(--line); border-radius: 12px; background: white; }
+.flavors article::before { position: absolute; z-index: 1; top: 11px; left: 15px; content: '0' counter(flavors); color: #aa8b78; font-family: var(--serif); font-size: 11px; }
+.flavors h3 { display: flex; min-height: 82px; align-items: flex-end; margin: 0; padding: 28px 15px 13px; font-family: var(--sans); font-size: 13px; line-height: 1.4; font-weight: 500; }
+.flavors img { width: 100%; aspect-ratio: 1 / 1.08; object-fit: cover; transition: transform .45s; }
+.flavors article:hover img { transform: scale(1.035); }
 .weight { background: var(--cream); text-align: center; }
 .weight h2 { margin-right: auto; margin-left: auto; }
 .weight-grid { display: grid; max-width: 920px; grid-template-columns: repeat(3,1fr); gap: 12px; margin: 30px auto 0; }
