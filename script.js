@@ -1,5 +1,15 @@
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#main-nav');
+const orderMessage = `Здравствуйте! Хочу оформить заказ.
+Дата:
+Количество гостей:
+Желаемый вес:
+Начинка:
+Пожелания к оформлению:`;
+
+document.querySelectorAll('a[href="https://t.me/antonovaov"]').forEach((link) => {
+  link.href = `https://t.me/antonovaov?text=${encodeURIComponent(orderMessage)}`;
+});
 
 function closeMenu() {
   menuButton?.setAttribute('aria-expanded', 'false');
@@ -34,4 +44,9 @@ document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') closeMenu();
 });
 
-document.querySelector('#year').textContent = new Date().getFullYear();
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1100) closeMenu();
+});
+
+const year = document.querySelector('#year');
+if (year) year.textContent = new Date().getFullYear();

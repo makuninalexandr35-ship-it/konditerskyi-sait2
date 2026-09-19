@@ -81,6 +81,7 @@ h2 { max-width: 920px; margin: 0 0 20px; font-size: clamp(42px, 4.4vw, 66px); li
 .flavors { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; counter-reset: flavors; }
 .flavors span { position: relative; min-height: 84px; padding: 27px 18px 15px; counter-increment: flavors; border: 1px solid var(--line); border-radius: 10px; background: white; font-size: 13px; }
 .flavors span::before { position: absolute; top: 8px; left: 18px; content: '0' counter(flavors); color: #aa8b78; font-family: var(--serif); font-size: 11px; }
+.flavors small { display: block; margin-top: 7px; color: var(--muted); font-size: 10px; line-height: 1.45; }
 .weight { background: var(--cream); text-align: center; }
 .weight h2 { margin-right: auto; margin-left: auto; }
 .weight-grid { display: grid; max-width: 920px; grid-template-columns: repeat(3,1fr); gap: 12px; margin: 30px auto 0; }
@@ -108,6 +109,7 @@ h2 { max-width: 920px; margin: 0 0 20px; font-size: clamp(42px, 4.4vw, 66px); li
 .telegram-cta > p:not(.eyebrow):not(.contact) { max-width: 760px; margin: 0 auto 26px; color: #eedfdb; font-size: 14px; line-height: 1.7; }
 .telegram-cta .btn { border-color: white; background: white; color: var(--wine); }
 .contact { margin: 17px 0 0; font-size: 14px; }
+.contact a, .footer-phone { text-decoration: underline; text-decoration-color: rgba(216,182,135,.55); text-underline-offset: 4px; }
 .faq { max-width: 1100px; margin: auto; }
 .faq details { border-top: 1px solid var(--line); }
 .faq details:last-child { border-bottom: 1px solid var(--line); }
@@ -119,6 +121,7 @@ h2 { max-width: 920px; margin: 0 0 20px; font-size: clamp(42px, 4.4vw, 66px); li
 footer { display: flex; justify-content: space-between; gap: 20px; padding: 40px 4.7vw; background: #280713; color: white; font-size: 12px; }
 footer strong { font-family: var(--serif); font-size: 22px; font-weight: 500; }
 footer span { display: block; margin-top: 5px; color: #cdb9b6; }
+.footer-phone { display: block; margin-top: 5px; color: #cdb9b6; }
 footer span span { display: inline; }
 footer > div:last-child { text-align: right; }
 .mobile-sticky { display: none; }
